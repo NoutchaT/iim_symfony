@@ -24,4 +24,14 @@ class DefaultController extends Controller
             'thibaud' => 'He\'s awesome anyway 😎',
         ]);
     }
+
+    /**
+     * @Route(path="/product", name="product")
+     */
+    public function product()
+    {
+        return $this->render('product.html.twig', [
+        'thibaud' => 'He\'s awesome anyway 😎',
+        ]);
+    }
 }
